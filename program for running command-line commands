@@ -1,0 +1,10 @@
+import subprocess
+
+# Ask user for command input
+command = input("Enter command: ")
+
+# Execute command and capture output
+output = subprocess.check_output(command, shell=True)
+
+# Print output
+print(output.decode())
